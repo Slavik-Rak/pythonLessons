@@ -134,27 +134,118 @@
 #     count = 1
 
 
+# dnk = input("Enter: ")
+# counter = 1
+# x = 1
+# j = dnk[x:x+1]
+# # print(j)
+# for i in dnk:
+#     if i in j:
+#         counter += 1
+#     else:
+#         print(i, end="")
+#         print(counter, end="")
+#         counter = 1
+#     x += 1
+#     # print(j)
+#     j = dnk[x:x+1]
+#     print(j)
 
-dnk = input("Enter: ")
-counter = 1
-x = 1
-j = dnk[x:x+1]
-# print(j)
-for i in dnk:
-    if i in j:
-        counter += 1
-    else:
-        print(i, end="")
-        print(counter, end="")
-        counter = 1
-    x += 1
-    # print(j)
-    j = dnk[x:x+1]
-    print(j)
+# 1) Напишите программу, на вход которой подается одна строка с целыми числами.
+# Программа должна вывести сумму этих чисел.
+#
+# Используйте метод split строки.
+
+# str = input("Enter number: ")
+# n = str.split()
+# print(n)
+# sum = 0
+# for i in n:
+#     sum += int(i)
+#     print(i)
+# print(sum)
+
+# for i in n[0]:
+#     print(i)
+#     sum += int(i)
+# print(sum)
 
 
+# 2) Напишите программу, которая считывает с консоли числа
+# (по одному в строке) до тех пор, пока сумма введённых чисел не будет
+# равна 0 и сразу после этого выводит сумму квадратов всех считанных чисел.
+#
+# Гарантируется, что в какой-то момент сумма введённых чисел окажется равной 0,
+# после этого считывание продолжать не нужно.
 
+# sum = 0
+# sumPow = 0
+# while True:
+#     n = int(input("Enter number: "))
+#     sum += n
+#     sumPow += n**2
+#     if sum == 0:
+#         break
+# print(sumPow)
 
+# 3) Напишите программу, которая считывает список чисел lst из первой
+# строки и число x из второй строки, которая выводит все позиции,
+# на которых встречается число x в переданном списке lst.
+#
+# Позиции нумеруются с нуля, если число x не встречается в списке,
+# вывести строку "Отсутствует" (без кавычек, с большой буквы).
 
+# Позиции должны быть выведены в одну строку, по возрастанию абсолютного значения.
 
+# lst = []
+# while True:
+#     n = input("Enter number: ")
+#     lst.append(n)
+#     if n == "!":
+#         lst.pop(-1)
+#         break
+# number = int(input("Enter search number"))
+# ind = 0
+# count = 0
+# for i in lst:
+#     if int(i) == number:
+#         print(ind, end=" ")
+#         count += 1
+#     ind += 1
+# if count == 0:
+#     print("Отсутствует")
+#
 
+# 1. Создать произвольный список
+# 2. Добавить новый элемент типа str в конец списка-
+# 3. Добавить новый элемент типа int на место с индексом
+# 4. Добавить новый элемент типа list в конец списка
+# 5. Добавить новый элемент типа tuple на место с индексом
+# 6. Получить элемент по индексу
+# 7. Удалить элемент
+# 8. Найти число повторений элемента списка
+# (1,2,3)
+
+# lst = [1, 3, "qwe", True]
+# lst.append("String")
+# print(lst)
+# lst[3] = 3
+# print(lst)
+# lst.append([9, 7, 0])
+# print(lst)
+# lst[0] = (1, 2, 3)
+# print(lst)
+# print(lst[3])
+# lst.pop(0)
+# print(lst)
+#
+# print(lst.count(3))
+#
+
+i = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(i)
+print(i[:2])
+print(i[1:])
+print(i[1:9])
+print(i[1:9:2])
+print(i[::])
