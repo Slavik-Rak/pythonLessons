@@ -66,16 +66,18 @@
 
 # age    if 1<age<100
 
-# def check_age(age):
-#     if 1 < age < 100:
-#         return True
-#     else:
-#         return False
-#
-#
-# check = check_age
-#
+def check_age(age):
+    if 1 < age < 100:
+        return True
+    else:
+        return False
+
+
+check = check_age
+
+print(check(18))
 # print(type(check(18)))
+
 
 # def try_operation(a, b, operation):
 #     result = operation(a, b)
@@ -95,24 +97,24 @@
 # try_operation(5, 4, multiplay)
 
 # -------------------------
-
-def sum(a, b):
-    return a + b
-
-
-def multiplay(a, b):
-    return a * b
-
-
-def select_operation(choice):
-    if choice == 1:
-        return sum
-    else:
-        return multiplay
-
-
-opration = select_operation(1)
-print(opration(10, 6))
-
-opration = select_operation(0)
-print(opration(10, 6))
+#
+# def sum(a, b):
+#     return a + b
+#
+#
+# def multiplay(a, b):
+#     return a * b
+#
+#
+# def select_operation(choice):
+#     if choice == 1:
+#         return sum
+#     else:
+#         return multiplay
+#
+#
+# opration = select_operation(1)
+# print(opration(10, 6))
+#
+# opration = select_operation(0)
+# print(opration(10, 6))
