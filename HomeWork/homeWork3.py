@@ -65,28 +65,22 @@
 # не равны None.
 # Получим, например, следующее сообщение: «Переданы аргументы: var1 = 2, var3 = 10».
 
-def three_args(var1=None, var2=None, var3=None):
-    print(var1, var2, var3)
-    if var1 != "None":
-        print("Переданы аргументы: var2 =", var2, "var3 =", var3)
-    elif var2 == None:
-        print("Переданы аргументы: var1 =", var1, "var3 =", var3)
-    elif var3 == None:
-        print("Переданы аргументы: var1 =", var1, "var2 =", var2)
-    elif var1 == None and var2 == None:
-        print("Переданы аргументы: var3 =", var3)
-    elif var1 == None and var3 == None:
-        print("Переданы аргументы: var2 =", var2)
-    elif var2 == None and var3 == None:
-        print("Переданы аргументы: var1 =", var1)
+def three_args(var1="None", var2="None", var3="None"):
+    if var1 == "None" and var2 == "None" and var3 == "None":
+        print("Errors!!!")
     else:
-        print("Переданы аргументы всі: None")
+        print("Переданы аргументы:", end="")
+        if var1 != "None":
+            print(" var1 =", var1, end="")
+        if var2 != "None":
+            print(" var2 =", var2, end="")
+        if var3 != "None":
+            print(" var3 =", var3, end="")
+
 
 
 arg1 = input("Enter arg1: ")
 arg2 = input("Enter arg2: ")
 arg3 = input("Enter arg3: ")
 
-
 three_args(arg1, arg2, arg3)
-
