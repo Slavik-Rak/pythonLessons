@@ -43,3 +43,33 @@
 # Для решения потребуется метод sort(), в который передается функция,
 #  определяющая абсолютное значение.
 
+lst = [2, 4, -3, 5, -9]
+
+listAdd = []
+
+for i in lst:
+    if i < 0:
+        listAdd.append(i)
+
+
+def list_sort(lst):
+    for i in lst:
+        if i < 0:
+            lst[lst.index(i)] = i * -1
+    return lst
+
+
+lst = list_sort(lst)
+lst.sort(reverse=True)
+
+
+for i in listAdd:
+    for j in lst:
+        if i == (j * (-1)):
+            lst[lst.index(j)] = j * -1
+
+
+
+print(lst)
+
+
