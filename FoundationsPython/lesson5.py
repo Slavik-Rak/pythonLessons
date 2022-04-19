@@ -66,16 +66,16 @@
 
 # age    if 1<age<100
 
-def check_age(age):
-    if 1 < age < 100:
-        return True
-    else:
-        return False
-
-
-check = check_age
-
-print(check(18))
+# def check_age(age):
+#     if 1 < age < 100:
+#         return True
+#     else:
+#         return False
+#
+#
+# check = check_age
+#
+# print(check(18))
 # print(type(check(18)))
 
 
@@ -118,3 +118,17 @@ print(check(18))
 #
 # opration = select_operation(0)
 # print(opration(10, 6))
+
+
+# mesage = lambda: print("Hello ")
+#
+# mesage()
+
+# a = lambda n: n * n
+#
+# print(a(3))
+
+
+
+
+
