@@ -37,7 +37,11 @@
 # то есть соединение, строк. В остальных случаях введенные числа суммируются.
 
 a = 1
-b = 2
+b = "2d"
 
-if int(a) and int(b):
+try:
+    print(int(a) / int(b))
 
+except Exception as e:
+    print("Error!!! Name \n", e)
+    print(str(a) + str(b))
